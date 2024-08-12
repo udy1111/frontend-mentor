@@ -1,0 +1,485 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo Styles */
+.logo img {
+    max-width: 200px;
+}
+
+/* Navigation Links Styles */
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #3b82f6;
+}
+
+/* Authentication Links Styles */
+.auth-links {
+    display: flex;
+    align-items: center;
+}
+
+.auth-links .login {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.auth-links .signup {
+    padding: 10px 20px;
+    background-color: #3b82f6;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.auth-links .signup:hover {
+    background-color: #2563eb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .auth-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .auth-links .login {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+main {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.container1 {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container1 li {
+    list-style: none;
+}
+
+.container1 a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    padding: 8px 15px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container1 a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+    color: #222;
+}
+
+.hero p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.image {
+    margin-top: 30px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: 20px;
+    }
+
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+
+footer {
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-logo img {
+    max-width: 100px;
+}
+
+.footer-newsletter {
+    flex: 1;
+    max-width: 300px;
+}
+
+.footer-newsletter h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.footer-newsletter p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.footer-newsletter form {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-newsletter input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.footer-newsletter button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-newsletter button:hover {
+    background-color: #0056b3;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    flex: 2;
+    max-width: 700px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #0056b3;
+}
+
+.footer-bottom {
+    flex-basis: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    border-top: 1px solid #eaeaea;
+    padding-top: 20px;
+}
+
+.footer-legal {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-legal li a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.footer-legal li a:hover {
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-newsletter,
+    .footer-links,
+    .footer-bottom {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+main {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container6, .container7, .container8 {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container6 {
+    display: flex;
+    align-items: flex-start;
+}
+
+.container6 .brief-content {
+    flex: 2;
+}
+
+.brief-content h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.brief-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.brief-content ul li {
+    margin-bottom: 10px;
+}
+
+.container7 h2, .container8 h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.container7 ul, .container8 ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.container7 ul li, .container8 ul li {
+    margin-bottom: 10px;
+}
+
+.container9 {
+    max-width: 500px;
+    margin-left: 35%;
+}
+
+.accordion-button {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #0d6efd;
+    background-color: #e9ecef;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+
+.accordion-item {
+    border: 1px solid #dee2e6;
+    border-radius: .375rem;
+    margin-bottom: 1rem;
+}
+
+.accordion-body {
+    background-color: #ffffff;
+    color: #212529;
+}
+
+h2 {
+    text-align: center;
+}
+
+.discord-section {
+    text-align: center;
+    background-color: #3b3ef6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #fff(0, 0, 0, 0.1);
+    padding: 50px;
+    max-width: 1400px;
+    width: 500%;
+    margin-left: 4%;
+}
+
+.discord-section img {
+    width: 100px;
+    margin-bottom: 20px;
+    background-image: #fff;
+}
+
+.discord-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.discord-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.discord-section .btn-discord {
+    background-color: #fff;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+}
+
+.discord-section .btn-discord:hover {
+    background-color: #fff;
+}
